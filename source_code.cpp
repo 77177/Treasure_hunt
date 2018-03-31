@@ -1,7 +1,6 @@
 #include <iostream>
 #include <time.h>
 #include <list>
-#include <fstream>
 #include <conio.h>
 
 using namespace std;
