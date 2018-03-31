@@ -269,12 +269,12 @@ int main()
 
 	if (en.SAVE == 'X' || play.SAVE == 'E')
 	{
-		field[en.place[0]][en.place[1]] == 'E';
+		field[en.place[0]][en.place[1]] = 'E';
 		cout << "You've been eaten up by the monster!" << endl;
 	}
 	else if (play.SAVE == 'S')
 	{
-		field[play.place[0]][play.place[1]] == 'S';
+		field[play.place[0]][play.place[1]] = 'S';
 		cout << "You've found the treasure!" << endl;
 	}
 	
