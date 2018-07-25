@@ -1,3 +1,9 @@
+// ConsoleApplication1.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+
+
 #include <iostream>
 #include <time.h>
 #include <list>
@@ -67,9 +73,9 @@ int main()
 	cout << "X - player" << endl;
 	cout << "E - Monster" << endl;
 	cout << "S - Treasure" << endl;
-  cout << "Use WASD to move around" << endl;
+	cout << "Use WASD to move around" << endl;
 	cout << endl << "Press any key to continue..." << endl;
-	_getch();
+	cin.get();
 
 
 	do
@@ -81,6 +87,7 @@ int main()
 		if (_kbhit() == true)
 		{
 			choice = _getch();
+			char flush = _getch();
 			//moved = true;
 		}
 
@@ -277,7 +284,7 @@ int main()
 		field[play.place[0]][play.place[1]] = 'S';
 		cout << "You've found the treasure!" << endl;
 	}
-	
-	print_play_field(field);
+	cin.get();
 	return 0;
 }
+
