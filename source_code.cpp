@@ -13,7 +13,6 @@ public:
 	char SAVE;
 };
 
-
 void print_play_field(char field[30][30])
 {
 	for (int i = 0; i < 30; i++)
@@ -71,8 +70,6 @@ int main()
 	cout << "Use WASD to move around" << endl;
 	cout << endl << "Press any key to continue..." << endl;
 	cin.get();
-
-
 	do
 	{
 		system("cls");
@@ -85,7 +82,6 @@ int main()
 			char flush = _getch();
 			//moved = true;
 		}
-
 		//PLAYER MOVE
 		switch (choice)
 		{
